@@ -1,63 +1,17 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Virtual environment
-venv/
-env/
-ENV/
-.venv/
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# PyCharm & VSCode settings
-.idea/
-.vscode/
-
-# Python egg info
-*.egg-info/
-dist/
-build/
-.eggs/
-
-# Logs and temporary files
+# Docker
+docker-compose.override.yml
+*.tar
+*.img
+*.container
 *.log
-*.tmp
-*.bak
-*.swp
-*.swo
+*.pid
+*.sock
 
-# OS-specific
-.DS_Store
-Thumbs.db
+# Jenkins
+jenkins_home/
+secrets/
+init.groovy.d/
 
-# DVC cache (tracked separately)
-.dvc/tmp/
-.dvc/cache/
-
-# DVC files you usually **do want to keep tracked**:
-# !*.dvc
-# !dvc.yaml
-# !dvc.lock
-
-# Data folders not to be versioned via git
-data_raw/
-data_processed/
-data/
-models/
-metrics/
-
-# Credentials or API keys (if any)
-*.env
-.env*
-
-# Output from tools or evaluations
-__results__/
-*.pkl
-*.joblib
-*.h5
-
-# Notebook output if not cleaned
-*.out
+# Docker volumes or build artifacts
+volumes/
+tmp/
